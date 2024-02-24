@@ -1,5 +1,6 @@
 import axios from "axios";
-const BASE_URL='https://youtube-v31.p.rapidapi.com/captions'
+// import { useEffect } from "react";
+const BASE_URL='https://youtube-v31.p.rapidapi.com'
 const options = {
     url: BASE_URL,
     params: {
@@ -10,3 +11,8 @@ const options = {
       'X-RapidAPI-Host': 'youtube-v31.p.rapidapi.com'
     }
   };
+  export const fetchFromAPI=async (url)=>{
+   const{data}= await axios.get(`${BASE_URL}/${url}`,options);    //baseurl/getvideos or baseurl/getchanneldetail
+    return data;
+  }
+  
