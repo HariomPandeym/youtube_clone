@@ -13,6 +13,7 @@ const options = {
   };
   export const fetchFromAPI=async (url)=>{
    const{data}= await axios.get(`${BASE_URL}/${url}`,options);    //baseurl/getvideos or baseurl/getchanneldetail
+  //  console.log(data)
     return data;
   }
   

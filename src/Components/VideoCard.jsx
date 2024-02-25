@@ -16,7 +16,9 @@ const VideoCard = ({
     id: { videoId },
     snippet,
   },
+  
 }) => (
+  
   <Card
     sx={{
       width: { xs: "100%", sm: "358px", md: "320px" },
